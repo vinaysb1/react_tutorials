@@ -3,11 +3,13 @@ import './App.css';
 import Form from './Components/Form';
 import LifecycleA from './Components/LifecycleA';
 import ParentComp from './Components/ParentComp';
+import Refsdemo from './Components/Refsdemo';
 
 function App() {
   return (
     <div className="App">
-		<ParentComp />
+		<Refsdemo />
+		{/* <ParentComp /> */}
 			{/*  <Form /> */}
       {/* <LifecycleA /> */}
 			</div>
