@@ -5,11 +5,13 @@ import LifecycleA from './Components/LifecycleA';
 import ParentComp from './Components/ParentComp';
 import Refsdemo from './Components/Refsdemo';
 import FocusInput from './Components/FocusInput';
+import FRParent from './Components/FRParent';
 
 function App() {
   return (
     <div className="App">
-		<FocusInput />
+		<FRParent />
+		{/* <FocusInput /> */}
 		{/* <Refsdemo /> */}
 		{/* <ParentComp /> */}
 			{/*  <Form /> */}
