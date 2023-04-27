@@ -10,12 +10,32 @@ import PortalDemo from './Components/PortalDemo';
 import ErrorBoundary from './Components/ErrorBoundary';
 import ClickCounter from './Components/ClickCounter';
 import HoverCounter from './Components/HoverCounter';
+import ClickCounterTwo from './Components/ClickCounterTwo';
+import HoverCounterTwo from './Components/HoverCounterTwo';
+import Counter from './Components/Counter';
 
 function App() {
   return (
     <div className="App">
-		<ClickCounter name = 'vinay'/>
-		<HoverCounter />
+		
+		<Counter
+					render={(count, incrementCount) =>
+					<ClickCounterTwo
+						count={count}
+						incrementCount={incrementCount}>
+					</ClickCounterTwo>}>
+				</Counter>
+				<Counter
+					render={(count, incrementCount) =>
+					<HoverCounterTwo
+						count={count}
+						incrementCount={incrementCount}>
+					</HoverCounterTwo>}>
+				</Counter>
+		
+
+		{/* <ClickCounter name = 'vinay'/>
+		<HoverCounter /> */}
 	 {/* <ErrorBoundary /> */}
 		{/* <PortalDemo /> */}
 		{/* <FRParent /> */}
