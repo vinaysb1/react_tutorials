@@ -7,11 +7,17 @@ import Refsdemo from './Components/Refsdemo';
 import FocusInput from './Components/FocusInput';
 import FRParent from './Components/FRParent';
 import PortalDemo from './Components/PortalDemo';
+import ErrorBoundary from './Components/ErrorBoundary';
+import ClickCounter from './Components/ClickCounter';
+import HoverCounter from './Components/HoverCounter';
 
 function App() {
   return (
     <div className="App">
-		<PortalDemo />
+		<ClickCounter name = 'vinay'/>
+		<HoverCounter />
+	 {/* <ErrorBoundary /> */}
+		{/* <PortalDemo /> */}
 		{/* <FRParent /> */}
 		{/* <FocusInput /> */}
 		{/* <Refsdemo /> */}
